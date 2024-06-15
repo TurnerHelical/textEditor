@@ -20,4 +20,7 @@ butInstall.addEventListener('click', async () => {
   butInstall.disabled = true;
 });
 // TODO: Add an handler for the `appinstalled` event
-window.addEventListener('appinstalled', (event) => {});
+window.addEventListener('appinstalled', (event) => {
+    console.log('App installed', event);
+    window.deferredPrompt = null;
+  });
